@@ -7,18 +7,20 @@ import Bookmarks from "./components/Bookmarks/Bookmarks";
 
 function App() {
   const [bookmarks,setBookmarks]=useState([])
+  
  
  
   const handleAddBookmark=blog=>{
-    console.log('bookmarks adding soon')
-    alert('Bookmark added')
+    const newBookmarks=[...bookmarks,blog]
+  setBookmarks(newBookmarks)
+    
   }
   return (
     <>
       <Header></Header>
       <div className="md:flex max-w-7xl mx-auto">
         <Blogs handleAddBookmark={handleAddBookmark}></Blogs>
-        <Bookmarks></Bookmarks>
+        <Bookmarks bookmarks={bookmarks}></Bookmarks>
       </div>
     </>
   );
