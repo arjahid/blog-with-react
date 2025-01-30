@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "cover": "https://example.com/images/cover1.jpg",
+      "cover": "https://i.postimg.cc/d0q51WDj/Blogpost.jpg",
       "title": "The Secrets of the Code",
       "author": "John Doe",
       "author_img": "https://example.com/images/john_doe.jpg",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "cover": "https://example.com/images/cover2.jpg",
+      "cover": "https://i.postimg.cc/ZY7zhd7Q/high-angle-plant-notebook-frame.jpg",
       "title": "Mastering JavaScript",
       "author": "Alice Smith",
       "author_img": "https://example.com/images/alice_smith.jpg",
