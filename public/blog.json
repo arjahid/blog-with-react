@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "https://example.com/images/cover1.jpg",
+      "title": "The Secrets of the Code",
+      "author": "John Doe",
+      "author_img": "https://example.com/images/john_doe.jpg",
+      "post_date": "2025-01-30T14:00:00Z",
+      "reading_time": 5,
+      "hashtag": ["#coding", "#technology", "#software"]
+    },
+    {
+      "id": 2,
+      "cover": "https://example.com/images/cover2.jpg",
+      "title": "Mastering JavaScript",
+      "author": "Alice Smith",
+      "author_img": "https://example.com/images/alice_smith.jpg",
+      "post_date": "2025-01-29T10:00:00Z",
+      "reading_time": 7,
+      "hashtag": ["#javascript", "#webdev", "#programming"]
+    },
+    {
+      "id": 3,
+      "cover": "https://example.com/images/cover3.jpg",
+      "title": "Cybersecurity Basics",
+      "author": "Robert Johnson",
+      "author_img": "https://example.com/images/robert_johnson.jpg",
+      "post_date": "2025-01-28T08:00:00Z",
+      "reading_time": 6,
+      "hashtag": ["#cybersecurity", "#infosec", "#hacking"]
+    },
+    {
+      "id": 4,
+      "cover": "https://example.com/images/cover4.jpg",
+      "title": "AI and the Future",
+      "author": "Emily Davis",
+      "author_img": "https://example.com/images/emily_davis.jpg",
+      "post_date": "2025-01-27T18:00:00Z",
+      "reading_time": 8,
+      "hashtag": ["#ai", "#machinelearning", "#future"]
+    },
+    {
+      "id": 5,
+      "cover": "https://example.com/images/cover5.jpg",
+      "title": "Building Scalable Apps",
+      "author": "Michael Brown",
+      "author_img": "https://example.com/images/michael_brown.jpg",
+      "post_date": "2025-01-26T12:00:00Z",
+      "reading_time": 9,
+      "hashtag": ["#softwareengineering", "#scalability", "#development"]
+    }
+  ]
+  
