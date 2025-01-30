@@ -2,7 +2,7 @@ import profile from '../../assets/images/profile.png'
 import { FaBookmark } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 const Blog = ({blog,handleAddBookmark,handleReadingMarkasRead}) => {
-    const {title,author,reading_time,post_date,hashtag} = blog;
+    const {id,title,author,reading_time,post_date,hashtag} = blog;
     return (
         <div className='mb-20 space-y-4'>
             <img className='w-full mb-8 mt-5' src='https://i.postimg.cc/ZY7zhd7Q/high-angle-plant-notebook-frame.jpg' alt="" />
@@ -30,7 +30,7 @@ const Blog = ({blog,handleAddBookmark,handleReadingMarkasRead}) => {
                     </a>
                   </span>)
                 }</p>
-                <button onClick={()=>handleReadingMarkasRead(reading_time)} className='text-purple-600 font-bold underline'>Mark As Read</button>
+                <button onClick={()=>handleReadingMarkasRead(reading_time,id)} className='text-purple-600 font-bold underline'>Mark As Read</button>
             
         </div>
     );
