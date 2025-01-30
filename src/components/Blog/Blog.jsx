@@ -1,10 +1,11 @@
 import profile from '../../assets/images/profile.png'
+import { FaBookmark } from 'react-icons/fa';
 import PropTypes from 'prop-types';
-const Blog = ({blog}) => {
-    const {title,author,author_img,reading_time, content,post_date,hashtag} = blog;
+const Blog = ({blog,handleAddBookmark}) => {
+    const {title,author,reading_time,post_date,hashtag} = blog;
     return (
-        <div>
-            <img src='https://i.postimg.cc/ZY7zhd7Q/high-angle-plant-notebook-frame.jpg' alt="" />
+        <div className='mb-20'>
+            <img className='w-full mb-8 mt-5' src='https://i.postimg.cc/ZY7zhd7Q/high-angle-plant-notebook-frame.jpg' alt="" />
             <div className='flex justify-between'>
                 <div className='flex '>
                     <img className='w-12' src={profile} alt="" />
@@ -13,11 +14,15 @@ const Blog = ({blog}) => {
                         <p>{post_date}</p>
                     </div>
                 </div>
-                <div>
+                <div className='flex items-center'>
                     <span>{reading_time} min read</span>
+                    <button onClick={handleAddBookmark} 
+                    className='ml-2 text-2xl'>
+                        <FaBookmark /></button>
+                       
                 </div>
             </div>
-            <h2 className='text-4xl'>{title}</h2>
+            <h2 className='text-4xl mt-3'>{title}</h2>
             <p>{
                 hashtag.map((hash,idx)=><span key={idx} style={{ marginRight: '10px' }}>
                     <a href={`#${hash}`} style={{ color: '#007bff', textDecoration: 'none' }}>
